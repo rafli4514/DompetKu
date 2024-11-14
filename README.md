@@ -59,7 +59,7 @@ Pastikan memiliki tool berikut:
 
 ## Kontribusi
 
-Kami menyambut kontribusi dari komunitas! Silakan buka *issue* atau kirim *pull request* untuk menambahkan fitur baru atau memperbaiki bug.
+Kami menyambut kontribusi dari Teman-teman! Silakan buka *issue* atau kirim *pull request* untuk menambahkan fitur baru atau memperbaiki bug.
 
 ## Penulis
 
