@@ -64,3 +64,4 @@ Kami menyambut kontribusi dari Teman-teman! Silakan buka *issue* atau kirim *pul
 ## Penulis
 
 - **Muhammad Rafli Aulia**
+- **Teuku Aldie Aulia**
