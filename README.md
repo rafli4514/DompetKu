@@ -4,7 +4,7 @@ Dompetku adalah aplikasi pengelolaan keuangan pribadi berbasis web yang dirancan
 
 ## Teknologi yang Digunakan
 
-- **Front-End**: Vue.js, Inertia.js, Bootstrap, HTML, CSS
+- **Front-End**: Vue.js, Inertia.js, tailwind, HTML, CSS
 - **Back-End**: Laravel (PHP)
 - **Database**: MySQL
 
