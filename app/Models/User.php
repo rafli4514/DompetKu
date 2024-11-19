@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Faker\Provider\ar_EG\Payment;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -43,5 +45,30 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function accounts()
+    {
+        return $this->hasMany(Accounts::class);
+    }
+
+    public function investments()
+    {
+        return $this->hasMany(Investments::class);
+    }
+
+    public function goals()
+    {
+        return $this->hasMany(Goals::class);
+    }
+
+    public function transactions()
+    {
+        return $this->hasMany(Transactions::class);
+    }
+
+    public function tagihan()
+    {
+        return $this->hasMany(Payments::class);
     }
 }
