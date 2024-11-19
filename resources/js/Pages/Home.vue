@@ -23,8 +23,12 @@
 
       <!-- Sign In and Sign Up Buttons -->
       <div class="flex space-x-4">
-        <inertia-link href="{{ route('login') }}" class="bg-transparent border border-gray-400 rounded-md px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 hover:border-gray-500 transition-colors duration-200">Sign In</inertia-link>
-        <inertia-link href="{{ route('register') }}" class="bg-[#00966b] text-white rounded-md px-4 py-2 text-sm font-medium hover:bg-[#007d58] transition-colors duration-200">Sign Up</inertia-link>
+        <inertia-link href="{{ route('login') }}"
+          class="bg-transparent border border-gray-400 rounded-md px-4 py-2 text-white text-sm font-medium hover:bg-gray-700 hover:border-gray-500 transition-colors duration-200">Sign
+          In</inertia-link>
+        <inertia-link href="{{ route('register') }}"
+          class="bg-[#00966b] text-white rounded-md px-4 py-2 text-sm font-medium hover:bg-[#007d58] transition-colors duration-200">Sign
+          Up</inertia-link>
       </div>
     </nav>
   </header>
@@ -38,13 +42,13 @@
 
     <!-- Grid Container untuk Membagi 50/50 -->
     <div
-      class="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center w-full max-w-screen-xl mx-auto px-8 lg:px-16 py-24 gap-8">
+      class="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center w-full max-w-screen-xl mx-auto px-8 lg:px-16 py-24 gap-28">
       <!-- Kolom Kiri: Konten Teks -->
       <div class="flex flex-col space-y-6 text-left">
-        <h2 class="text-white text-4xl lg:text-5xl font-bold leading-snug">
-          Dompetku Solusi mudah untuk mengelola keuangan Anda.
+        <h2 class="text-white text-5xl lg:text-4xl font-bold leading-snug">
+          Dompetku Solusi mudah untuk mengelola keuangan Anda
         </h2>
-        <p class="text-white text-base lg:text-lg font-normal leading-loose max-w-lg">
+        <p class="text-white text-xs lg:text-sm  font-normal leading-loose max-w-lg">
           Kelola pendapatan, pengeluaran, dan tabungan dengan praktis. Gabung sekarang dan mulai atur keuangan Anda
           dengan Dompetku!
         </p>
@@ -63,8 +67,7 @@
 
       <!-- Kolom Kanan: Gambar atau Ilustrasi -->
       <div class="flex justify-center items-center">
-        <img src="https://via.placeholder.com/400x300" alt="Financial Illustration"
-          class="w-full max-w-md rounded-lg shadow-lg opacity-90" />
+        <img :src="getImageUrl('HeroImage1.png')" alt="Financial Illustration"/>
       </div>
     </div>
   </div>
@@ -136,10 +139,10 @@
   </section>
 
   <section class="bg-white h-screen p-16">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center py-10">
       <!-- Illustration Section -->
       <div class="w-full md:w-1/2 flex justify-center md:justify-start mb-8 md:mb-0">
-        <img src="https://via.placeholder.com/600x400" alt="Financial Management Illustration" class="">
+        <img :src="getImageUrl('HeroImage2.png')" alt="Financial Management Illustration" class="">
       </div>
 
       <!-- Text Content Section -->
@@ -352,5 +355,15 @@
 <script>
 export default {
   name: 'Home',
+  methods: {
+    getImageUrl(filename) {
+      return `/assets/${filename}`;
+    },
+
+    getIconUrl(filename) {
+      return `/assets/icon/${filename}`;
+    },
+  },
+
 };
 </script>
