@@ -13,3 +13,7 @@ Route::get('/login', function () {
 Route::get('/daftar', function () {
     return inertia('Daftar');
 });
+
+Route::get('/dashboard', function () {
+    return inertia('Dashboard');
+});
