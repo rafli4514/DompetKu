@@ -19,7 +19,7 @@ Pastikan memiliki tool berikut:
 
 1. **Clone repositori ini:**
    ```bash
-   git clone https://github.com/username/dompetku.git
+   git clone https://github.com/rafli4514/dompetku.git
    cd dompetku
    ```
 
