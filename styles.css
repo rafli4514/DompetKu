@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: #e8f4f8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.sidebar h1 {
+    margin-bottom: 40px;
+    color: #008080;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #cce7e8;
+}
+.content {
+    margin-left: 20%;
+    padding: 20px;
+}
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-header h2 {
+    margin: 0;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card.green {
+    background-color: #d4f6dd;
+}
+.card.red {
+    background-color: #f6d4d4;
+}
+.analytics {
+    margin-top: 20px;
+}
+.goals,
+.account {
+    margin-top: 20px;
+}
+.goals .goal {
+    margin-bottom: 10px;
+}
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 5px;
+}
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 5px;
+}
+.transactions {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
